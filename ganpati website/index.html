@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OM SaiRam MitraMandal - Ganesh Utsav 2025</title>
+  <meta name="description" content="Om Sairam Mitra Mandal - Ganesh Utsav celebration website." />
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Marquee styling */
+    .aarti-marquee {
+      background: #8BC34A;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      padding: 8px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .aarti-marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 12s linear infinite;
+    }
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <!-- Fixed path -->
+        <img src="images/logo.png" alt="logo">
+        <div>
+          <div class="brand">ॐ साई राम मित्र मंडळ</div>
+          <div class="muted small">Ganesh Utsav Celebration Mandal</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Aarti Marquee -->
+    <div class="aarti-marquee">
+      <span>आगमन सोहळा:21 ऑगस्ट 2025
+ स्थान: गणेश मंदिर, गणेशनगर रोड ते चौडेश्वरी देवी मंदिर, फेगेंगाव
+ वेळ: 05:00 PM</span>
+    </div>
+
+    <main id="home">
+      <div class="hero">
+        <div class="hero-card">
+          <h1>ॐ साई राम मित्र मंडळ — Ganesh Utsav 2025</h1>
+          <div class="tagline">Bringing devotion, culture & vibrant community celebrations together.</div>
+          <p class="muted">Join us for Aarti, cultural programs, music, dance, competitions, and the heartfelt visarjan. Everyone's welcome — families, kids, elders — come celebrate Lord Ganesha with us!</p>
+          <div style="display:flex; gap:10px; margin-top:12px;">
+            <button class="btn" onclick="document.getElementById('events').scrollIntoView({behavior:'smooth'})">View Events</button>
+            <button class="btn secondary" onclick="toggleMusic()">Play Aarti Music</button>
+          </div>
+
+         <!-- Quick cards -->
+<div style="display:flex; gap:12px; margin-top:14px; flex-wrap:wrap;">
+  <div class="aside-card" style="flex:1; min-width:180px; text-align:center;">
+    <div class="sponsor-title">EVENTS
+      <!-- Quote or Aarti Line -->
+    <p style="font-size:14px; color:#555; font-style:italic; margin-bottom:10px;">
+     
+    </p>
+
+
+    </div>
+
+   <!-- Sponsor Video -->
+
+<div class="pat-pujan-box">
+  
+   <video src="C:\ganpati website\videos\p.mp4" autoplay loop muted controls></video>
+  <p>पाट पूजन: OM SaiRam MitraMandal</p>
+</div>
+
+
+   
+
+    <div style="display:flex; gap:3px; justify-content:right; margin-top:8px;">
+      
+    </div>
+  </div>
+
+
+            <div class="aside-card" style="min-width:120px;">
+              <div class="sponsor-title">Countdown to Next Big Event</div>
+              <div class="muted small">आगमन — August 21, 2025 5:00 PM </div>
+              <div class="countdown" id="countdown">
+                <div class="seg"><div class="num" id="days">--</div><div class="lbl">Days</div></div>
+                <div class="seg"><div class="num" id="hours">--</div><div class="lbl">Hours</div></div>
+                <div class="seg"><div class="num" id="minutes">--</div><div class="lbl">Minutes</div></div>
+                <div class="seg"><div class="num" id="seconds">--</div><div class="lbl">Seconds</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="imgbox hero-card" style="padding:8px;">
+          <!-- Fixed path -->
+          <img src="images/bappa.jpg" alt="Ganesh" style="width:100%; height:100%; object-fit:cover">
+        </div>
+      </div>
+
+
+      <!-- Events Section -->
+      <section id="events">
+        <h2 style="color:#b84b00">Events & Programs</h2>
+        <p class="muted small">Join any event by registering at the bottom — timings & venues listed below.</p>
+        <div class="events-grid" style="margin-top:12px">
+          <!-- Event cards populated by script -->
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery">
+        <h2 style="color:#b84b00">Photo & Video Gallery</h2>
+        <div class="gallery-grid" style="margin-top:12px">
+          <img src="images\aagman.jpg" alt="g1" onclick="openModal(this.src)" />
+          <img src="images\gallery2.jpg" alt="g2" onclick="openModal(this.src)" />
+          <img src="images\gallery3.jpg" alt="g3" onclick="openModal(this.src)" />
+          <img src="images\gallery4.jpg" alt="g4" onclick="openModal(this.src)" />
+          <img src="images\gallery1.jpg" alt="g5" onclick="openModal(this.src)" />
+          <img src="images\i.jpg" alt="g6" onclick="openModal(this.src)" />
+        </div>
+      </section>
+
+      <!-- Schedule -->
+      <section id="schedule">
+        <h2 style="color:#b84b00">Cultural Programs Schedule</h2>
+        <div class="schedule">
+          <p class="muted small">Day-wise events during the festival</p>
+          <table>
+            <thead>
+              <tr><th>Day</th><th>Program</th><th>Time</th><th>Venue</th></tr>
+            </thead>
+            <tbody id="scheduleTable">
+              <!-- populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Sponsors & Donate -->
+      <section id="donate">
+        <h2 style="color:#b84b00">Sponsors & Donations</h2>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:flex-start">
+          <div class="aside-card" style="flex:1; min-width:260px;">
+            <h4>Become a Sponsor</h4>
+            <p class="muted small">Get your logo listed. Support the mandal's puja, decorations and visarjan.</p>
+            <div style="margin-top:8px;">
+              <input id="sponsorName" placeholder="Your Name / Business" class="inline-input" style="width:100%; margin-bottom:8px" />
+              <input id="sponsorAmount" placeholder="Amount (₹)" class="inline-input" style="width:100%; margin-bottom:8px" />
+              <button class="btn" onclick="registerSponsor()">Sponsor Now</button>
+            </div>
+            <div id="sponsorMsg" class="muted small" style="margin-top:8px"></div>
+          </div>
+
+          <div class="aside-card" style="flex:1; min-width:260px;">
+            <h4>Donate</h4>
+            <p class="muted small">Scan UPI / pay via bank transfer</p>
+            <img src="https://via.placeholder.com/200x200.png?text=UPI+QR+Code" alt="UPI QR" style="display:block; margin:8px 0; border-radius:6px" />
+            <div class="muted small">UPI ID: <strong>om.sairam@upi</strong></div>
+            <div style="margin-top:8px">
+              <input id="donorName" placeholder="Your name" class="inline-input" style="width:100%; margin-bottom:8px" />
+              <input id="donorAmount" placeholder="Amount (₹)" class="inline-input" style="width:100%; margin-bottom:8px" />
+              <button class="btn" onclick="donate()">Donate</button>
+              <div id="donMsg" class="muted small" style="margin-top:8px"></div>
+            </div>
+          </div>
+
+          <div class="aside-card" style="flex:1; min-width:260px;">
+            <h4>Volunteer</h4>
+            <p class="muted small">Help during events — crowd control, decoration, prasad distribution.</p>
+            <input id="volName" placeholder="Your name" class="inline-input" style="width:100%; margin-bottom:8px" />
+            <input id="volPhone" placeholder="Phone / WhatsApp" class="inline-input" style="width:100%; margin-bottom:8px" />
+            <button class="btn" onclick="volunteer()">Register as Volunteer</button>
+            <div id="volMsg" class="muted small" style="margin-top:8px"></div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px">
+          <h4>Our Sponsors</h4>
+          <div class="sponsor-logos" id="sponsorLogos">
+           <!-- sample logos -->
+<!-- sample logos -->
+<div class="sponsor-card"><img src="C:\ganpati website\images\manjya.jpg" alt="s1" /></div>
+<div class="sponsor-card"><img src="https://via.placeholder.com/120x48?text=Sharma+Bakery" alt="s2" /></div>
+<div class="sponsor-card"><img src="https://via.placeholder.com/120x48?text=Anand+Foods" alt="s3" /></div>
+
+
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2 style="color:#b84b00">Contact & Location</h2>
+        <div style="display:grid; grid-template-columns:1fr 300px; gap:12px; margin-top:8px">
+          <div class="aside-card">
+            <h4>Om Sairam Mitra Mandal</h4>
+            <p class="muted small">Near Chaudeshwari Devi Mandir,Fenegaon </p>
+            <p class="muted small">Phone: +91 9145307194</p>
+            <p class="muted small">Email: <a href="mailto:info@omsairam.org">info@omsairam.org</a></p>
+
+            <h4 style="margin-top:8px">Send a message</h4>
+            <input id="msgName" placeholder="Name" class="inline-input" style="width:100%; margin-bottom:8px" />
+            <input id="msgPhone" placeholder="Phone" class="inline-input" style="width:100%; margin-bottom:8px" />
+            <textarea id="msgText" placeholder="Message" class="inline-input" style="width:100%; height:80px; margin-bottom:8px"></textarea>
+            <button class="btn" onclick="sendMessage()">Send Message</button>
+            <div id="msgStatus" class="muted small" style="margin-top:8px"></div>
+          </div>
+
+          <div class="aside-card">
+            <h4>Location</h4>
+            <!-- Google Maps embed: Replace src with your real location -->
+            <iframe style="width:100%; height:220px; border:0; border-radius:8px" src="https://maps.google.com/maps?q=mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap">
+          <div class="muted small">© Om Sairam Mitra Mandal — Ganesh Utsav 2025</div>
+          <div class="muted small">Made with ❤️ for the community</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Image modal -->
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="content">
+      <img id="modalImg" src="" alt="large" style="width:100%; display:block" />
+    </div>
+  </div>
+
+  <!-- Hidden audio -->
+  <audio id="aartiAudio" loop src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5c7eea3b9d.mp3?filename=chanting-10905.mp3"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
